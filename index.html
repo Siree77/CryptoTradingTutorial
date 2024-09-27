@@ -309,18 +309,70 @@
                         <img src="images/macd.jpg" alt="MACD Chart" class="img-fluid rounded mb-4">
                     </section>
                 </section>
+<!-- Real-Time Chart Observations -->
+<section id="real-time-charts" class="mt-5">
+    <h2>Real-Time Chart Observations</h2>
+    <p>Gain hands-on experience by observing real-time charts and understanding market movements. Below are embedded charts that update in real-time, demonstrating key concepts like price action, volume, and technical indicators.</p>
+    <!-- Placeholder for real-time chart (Use APIs like TradingView) -->
+    <div class="real-time-chart">
+        <!-- Embed real-time TradingView chart -->
+        <iframe src="https://www.tradingview.com/chart/?symbol=BINANCE:BTCUSDT" class="img-fluid rounded mb-4"></iframe>
+    </div>
+</section>
 
-                <!-- Risk Management -->
-                <section id="risk-management" class="mt-5">
-                    <h2>Risk Management</h2>
-                    <p>Risk management is essential for protecting your capital and ensuring long-term trading success. Here's how to manage risk effectively in cryptocurrency trading.</p>
+<!-- Interactive Quiz -->
+<section id="quiz-section" class="mt-5">
+    <h2>Test Your Knowledge</h2>
+    <p>After completing this tutorial, take a short quiz to test what you've learned and reinforce your knowledge.</p>
+    <button class="btn btn-primary" onclick="startQuiz()">Start Quiz</button>
+    <!-- Quiz Questions will be dynamically loaded here -->
+    <div id="quiz-container"></div>
+</section>
 
-                    <ul>
-                        <li><strong>Stop Losses:</strong> Set stop-loss orders to minimize potential losses if the market moves against you.</li>
-                        <li><strong>Take Profit:</strong> Use take-profit orders to lock in profits when the market reaches your target.</li>
-                        <li><strong>Position Sizing:</strong> Never invest more than you can afford to lose. Proper position sizing helps manage risk and protect your capital.</li>
-                    </ul>
-                </section>
+<script>
+    // Example of a simple quiz function
+    function startQuiz() {
+        document.getElementById('quiz-container').innerHTML = `
+            <div class="quiz-question">
+                <p>What does RSI stand for in technical analysis?</p>
+                <button class="btn btn-outline-secondary" onclick="checkAnswer('wrong')">Relative Strength Index</button>
+                <button class="btn btn-outline-secondary" onclick="checkAnswer('correct')">Random Statistical Interpretation</button>
+                <button class="btn btn-outline-secondary" onclick="checkAnswer('wrong')">Rate of Signal Intensity</button>
+            </div>
+        `;
+    }
+
+    function checkAnswer(answer) {
+        let message = answer === 'correct' ? 'Correct!' : 'Wrong answer, try again!';
+        alert(message);
+    }
+</script>
+ <!-- Enhanced Risk Management Section -->
+<section id="risk-management" class="mt-5">
+    <h2>Risk Management</h2>
+    <p>Risk management is crucial in trading. Learn how to minimize risks and protect your investments with these strategies.</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+                <th>Application</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Stop Loss Orders</td>
+                <td>Limits your losses by setting a sell order at a specified price level.</td>
+                <td>Set stop loss 10% below purchase price to limit potential downside.</td>
+            </tr>
+            <tr>
+                <td>Risk/Reward Ratio</td>
+                <td>Assesses potential profit in relation to potential loss.</td>
+                <td>Maintain a minimum 1:3 risk/reward ratio in all trades.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
                 <!-- Additional Earnings -->
                 <section id="additional-earnings" class="mt-5">
